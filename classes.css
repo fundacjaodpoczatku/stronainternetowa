@@ -1,0 +1,444 @@
+/* index */
+/* header */
+
+.header_top img{ 
+    margin-right: 1rem;
+}
+.header_top{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.header_bottom{
+    max-width: 1000px;
+    display:flex;
+    justify-content: center;  
+}
+.head_list{
+    list-style:none;
+    display:flex;
+    justify-content: space-evenly;
+}
+#list-button{
+    position: relative;
+    overflow: hidden;
+}
+#list-button:hover{
+    color: #34a2dd;
+}
+#list-button::before{
+    content: '';
+    position: absolute;
+    background-color: #355a84;
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    bottom: -7.5%;
+    transition: width 0.5s;
+}
+#list-button:hover::before{
+    width: 100%;
+}
+
+/* section1 - slider */
+
+.cute_slider{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; 
+    background-color: black;       
+}
+.slider_item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycle-images 31s infinite;
+
+}
+#si_1{
+    animation-delay: 0s;
+}
+#si_2{
+    animation-delay: 10s;
+}
+#si_3{
+    animation-delay: 20s;
+}
+.slider_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_text{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.431);
+    color:azure;
+    padding:3rem 3rem;
+
+}
+.slider_text h5{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2.5rem;
+}
+.slider_text p{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 100;
+    
+}
+@keyframes cycle-images{
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+
+}
+
+/* section2 - fancy buttons */
+
+.offers{   
+    width: 100%;
+    display:flex;
+    justify-content: center; 
+    background-color: white;
+}
+.table{
+    width: 100%;;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    border-top: 10px solid #355a84;
+    border-bottom: 10px solid #355a84;
+     
+    
+}
+.table_part{    
+    width: 300px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-left: 2px solid #355a84; 
+    border-right: 2px solid #355a84; 
+}
+.button-table{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: #355a84;   
+    position: relative;
+    overflow: hidden;
+    transition: color .5s;
+    z-index: 10;      
+}
+.button-table:hover{
+    color: white;
+}
+.button-table::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 0;
+    height: 100%;        
+    background-image: linear-gradient(to left,#5c5c5c 20%,#34a2dd); 
+    transform: skewX(25deg);
+    z-index: -1;
+    transition: width .5s;
+}
+.button-table:hover::before{
+    width: 120%;
+}
+
+/* section3 - about us*/
+
+.about_us{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("puzzle.jpg");
+    background-size: cover;
+    border-bottom: 10px solid #355a84;
+}   
+.about_us_div{
+    opacity: 80%;
+    width: 60%;
+    padding: 2rem;
+    background-color: white;
+    border: 10px solid #355a84;
+   
+}
+/* section4 - regulamin */
+
+.regulamin{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgb(182, 173, 173) 60%, white);
+    border-bottom: 10px solid #355a84;
+}
+.regulamin_div{
+    opacity: 92%;
+    width: 60%;
+    padding: 2rem;
+    background-color: white;
+    border: 10px solid #355a84;
+}
+.regulamin_ul{
+    list-style: decimal;
+}
+/* footer */
+
+.footer_top{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_bottom{
+    display:flex;
+    justify-content: center;
+    
+}
+.footer_bottom a{
+    color: white;
+    padding: 2rem;
+}
+.contact_data{
+    color: white
+}
+
+.map h3{
+    color: white;
+}
+.map iframe{
+    height: fit-content;    
+}
+#message_link{
+    margin-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+#message_link:hover{
+    color: #355a84;
+}
+#home_sweet_home:hover{
+    color: #355a84;
+}
+
+/* harmonogram */
+
+.harmonogram_s{
+    display: flex;      
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    border: 10px solid #355a84; 
+}
+.week{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.harmonogram_main{
+    background-image: radial-gradient(rgb(90, 88, 88), white);   
+    display: flex;
+    align-items: center;  
+    border-bottom: 10px solid #355a84;  
+}
+.timetable{
+    display:flex;
+    flex-direction: column;
+}
+
+/* trenerzy */
+
+.trenerzy_body{
+    background-color: #000000;
+}
+
+.trenerzy_main{
+    min-height: 50vh;
+    padding-top: 5rem;
+    width: 80%;
+    
+    display:flex;
+    justify-content: center; 
+}
+.tms{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 80%;
+    background-color: white;
+    border: 10px solid #355a84;    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tms_d{
+    display:flex;
+    justify-content: center;
+}
+.trener_border{
+    max-width: 50%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trenerzy_img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    
+}
+
+/* cennik */
+
+.cennik_main{
+    background-image: radial-gradient(rgb(90, 88, 88), white);   
+    display: flex;
+    align-items: center;  
+    border-bottom: 10px solid #355a84; 
+}
+.cennik_main_section{
+    display: flex;      
+    justify-content: center;
+    max-width: 1500px;
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    opacity: 92%;
+    border: 10px solid #355a84;
+}
+.money_money{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.div_money{
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.piggybank{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    
+}
+.price{
+    text-decoration:dotted;
+}
+
+/* ========================= */
+/* RESPONSYWNE MENU (dodane - koniec pliku) */
+/* ========================= */
+
+/* minimalne reguły, bez zmiany twojego motywu - działa z .menu-toggle i #main-menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #34a2dd;
+}
+
+/* dla ekranów mobilnych pokaż hamburger i schowaj menu (rozwinie się po kliknięciu) */
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 18px;
+        z-index: 1002;
+    }
+
+    .header_bottom {
+        position: relative;
+        width: 100%;
+    }
+
+    .head_list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        display: none;
+        flex-direction: column;
+        background: #ffffff;
+        border-top: 2px solid #355a84;
+        box-shadow: 0 8px 20px rgba(0,0,0,.12);
+        z-index: 1001;
+        max-height: 0;
+        overflow: hidden;
+        gap: 0;
+        transition: max-height .28s ease;
+    }
+
+    .head_list.active {
+        display: flex;
+        max-height: 420px; /* wystarczające dla kilku linków */
+    }
+
+    .head_list li { margin: 0; text-align: center; }
+    .head_list a {
+        padding: 14px 16px;
+        font-size: 20px;
+        border-bottom: 1px solid #eee;
+        display: block;
+    }
+
+    .header_top img { height: 90px; }
+}
+
+
+.facebook_link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.facebook_logo {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1); /* sprawia, że logo jest białe */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.facebook_logo:hover {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1) drop-shadow(0 0 8px white);
+    cursor: pointer;
+}

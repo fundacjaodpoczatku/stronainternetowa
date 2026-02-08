@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="logo.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="form.css">
+  
+    
+    <title>Formularz Logowania</title>
+</head>
+<body>
+  <section class="message_section">
+    <p class="title">
+      Formularz Logowania
+    </p>
+    <form class="form_group" action="message.php" method="POST">
+      <div class="input_field">
+        <label class="form_label">Nazwa użytkownika</label>
+        <input type="text" name="username" class="form_input" placeholder="Nazwa użytkownika">
+      </div> 
+      <div class="input_field">
+        <label class="form_label">E-mail</label>
+        <input type="text" name="e-mail" class="form_input" placeholder="E-mail">
+      </div> 
+      <div class="input_field">
+        <label class="form_label">Hasło</label>
+        <input type="text" name="password" class="form_input" placeholder="Hasło">
+      </div> 
+      <div class="input_field">
+        <input type="submit" name="submit" class="button" value="Zaloguj">
+      </div>
+      
+    </form>   
+  </section>  
+  <a id="home_sweet_home" href="index.html#header">home</a> 
+</body>
+</html>

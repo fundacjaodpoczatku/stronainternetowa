@@ -1,0 +1,98 @@
+/* plik css od formularza i php */
+
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;  
+  margin: auto;
+  background-color: #66CCCC;
+  background-image: radial-gradient(rgba(90, 88, 88, 0), rgba(255, 255, 255, 0.426));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message_section{
+  max-width: 500px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 30px;
+}
+.title{
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #66CCCC;
+  text-transform: uppercase;
+  text-align: center;
+}
+.form_group{
+  width: 100%;
+}
+.input_field{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.form_label{
+  width: 200px;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  font-size: 16px;
+  
+}
+.form_input{
+  width: 100%;
+  outline: none;
+  border: 1px solid darkgray;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  
+}
+.form_input:focus{
+  border: 1px solid #66CCCC;
+
+}
+#textarea{
+  resize: none;
+  height: 125px;
+}
+.button{
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border:0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #66CCCC;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #7ee2e2;
+}
+#home_sweet_home{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.insert_section{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  background-color: #66CCCC;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgb(88, 168, 186) 0px 48px 100px 0px;
+  font-size:small;
+}

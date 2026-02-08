@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="logo.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="form.css">
+  
+    
+    <title>Formularz Wiadomości</title>
+</head>
+<body>
+  <section class="message_section">
+    <p class="title">
+      Formularz Wiadomości
+    </p>
+    <form class="form_group" action="insert.php" method="POST">
+      <div class="input_field">
+        <label class="form_label">Imię</label>
+        <input type="text" name="name" class="form_input" placeholder="Imię">
+      </div> 
+      <div class="input_field">
+        <label class="form_label">Nazwisko</label>
+        <input type="text" name="surname" class="form_input" placeholder="Nazwisko">
+      </div> 
+      <div class="input_field">
+        <label class="form_label">Wiadomość</label>
+        <textarea type="text" rows="5" class="form_input" id="textarea" name="message" placeholder="Wiadomość"></textarea>
+      </div> 
+      <div class="input_field">
+        <input type="submit" name="submit" class="button" value="Wyślij">
+      </div>
+      
+    </form>   
+  </section>  
+  <a id="home_sweet_home" href="index.html#header">home</a> 
+</body>
+</html>
