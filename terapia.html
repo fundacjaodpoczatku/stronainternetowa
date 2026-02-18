@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Terapia</title>
+</head>
+<body>
+    <header id="header" class="site-header">
+        <div class="header_top">
+             <a href="index.html" class="logo">
+              <img src="logo.png" alt="Fundacja od Początku"> 
+             </a>
+             <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Menu">☰</button>
+       </div>
+       <nav class="header_bottom">                
+           <ul id="main-menu" class="head_list">
+               <li><a href="ofundacji.html" id="list-button">O FUNDACJI</a></li>
+               <li><a href="#footer" id="list-button">KONTAKT</a></li>              
+            </ul>
+       </nav>    
+    </header>
+
+    <main class="cennik_main">
+        <div class="video-bg">
+            <video autoplay loop muted playsinline>
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+        </div>
+       
+        <section class="foundation_section">
+            <div class="foundation_inner">
+                <h2 class="foundation_title">Fundacja Wspierania Osób z Zaburzeniami Rozwoju <span class="brand">OD POCZĄTKU</span></h2>
+
+                <div class="foundation_grid">
+                    <article class="foundation_block">
+                        <h3>MISJA FUNDACJI</h3>
+                        <p>Podstawowym celem naszej Fundacji jest niesienie wszechstronnej pomocy dzieciom z zaburzeniami rozwoju, szczególnie dzieciom z autyzmem i ich rodzinom.</p>
+                        <p>Wczesne rozpoczęcie terapii może znacząco odmienić życie każdego dziecka.</p>
+                    </article>
+
+                    <article class="foundation_block">
+                        <h3>ZESPÓŁ</h3>
+                        <p>Zespół Fundacji to grupa osób, które chcą pomagać i wspierać przede wszystkim osoby niepełnosprawne, poprawiać ich funkcjonowanie i przeciwdziałać wykluczeniu społecznemu.</p>
+                    </article>
+                </div> 
+
+                <a class="team-cta" href="https://www.zieloneautyzm.pl/o-nas/zespol" target="_blank">
+                    <span class="cta-text">Kliknij by sprawdzić nasz zespół</span>
+                    <img src="right.png" alt="strzałka" class="cta-arrow">
+                    <img src="logoaba.png" alt="Logo ABA" class="cta-logo">
+                </a>
+            </div>
+        </section>
+    </main>
+        
+    <footer id="footer">
+        <div class="footer_top">
+            <div class="contact_data">
+                <h3><ins>Dane kontaktowe</ins></h3>
+                <h4>Telefon i e-mail:</h4>
+                <p>+48 726 205 945</p>
+                <p>katarzynaklimowicz@sosw4-krakow.com</p>
+                <h4>Adres:</h4>
+                <p>Os. Zielone 28, 31-971 Kraków</p>
+                <a class="facebook_link" href="https://www.facebook.com/profile.php?id=100071338070153" target="_blank">
+                    <img src="fblogo.png" alt="Facebook" class="facebook_logo">
+                </a>
+            </div>
+            <div class="map">
+                <h3><ins>Mapa</ins></h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198.55846999755627!2d20.04248166224048!3d50.07987786992164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716451336f52ee1%3A0x36d2aa81c05e7045!2sOsiedle%20Zielone%2028%2C%2031-971%20Krak%C3%B3w!5e1!3m2!1spl!2spl!4v1756062732830!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <a id="home_sweet_home" href="index.html">STRONA GŁÓWNA</a>   
+        </div>
+    </footer>
+      
+    <script>
+    const toggle=document.querySelector(".menu-toggle");
+    const menu=document.getElementById("main-menu");
+    if(toggle && menu){
+        toggle.addEventListener("click",()=>{
+            const open=menu.classList.toggle("active");
+            toggle.setAttribute("aria-expanded",open);
+            toggle.innerHTML = open ? "✕" : "☰";
+        });
+    }
+
+
+    
+    </script>
+</body>
+</html>
